@@ -74,6 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//form.
+
 function handleSubmit(event) {
     event.preventDefault(); // Prevent default form submission
     const form = event.target;
@@ -97,10 +99,10 @@ function handleSubmit(event) {
     .then(response => {
         if (response.ok) {
             responseMessage.textContent = "Your message has been sent successfully!";
-            responseMessage.style.color = 'green';
+            responseMessage.style.color = 'white';
         } else {
             responseMessage.textContent = "There was an error sending your message. Please try again.";
-            responseMessage.style.color = 'red';
+            responseMessage.style.color = 'white';
         }
         responseMessage.style.display = 'block';
         submitButton.disabled = false; // Re-enable submit button
@@ -108,7 +110,7 @@ function handleSubmit(event) {
     })
     .catch(error => {
         responseMessage.textContent = "There was an error sending your message. Please try again.";
-        responseMessage.style.color = 'red';
+        responseMessage.style.color = 'white';
         responseMessage.style.display = 'block';
         submitButton.disabled = false;
     });
