@@ -198,7 +198,7 @@
         
                 <div class="form-container">
                     <h2>Contact Me</h2>
-                    <form id="contact-form" action="https://formspree.io/f/mbllzgqg" method="POST">
+                    <form id="contact-form" action="https://formspree.io/f/mbllzgqg" method="POST" onsubmit="handleSubmit(event)">
                         <div class="input-field">
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" required>
@@ -213,7 +213,9 @@
                         </div>
                         <button type="submit" id="submit-btn">Submit</button>
                     </form>
+                    <p id="response-message" style="display: none;"></p>
                 </div>
+                
                 
             </section>
          </section>

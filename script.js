@@ -74,12 +74,45 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// JavaScript to handle form submission (optional, this is just a simple form alert for demonstration)
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from reloading the page
-    alert("Thank you for contacting us!");
-    document.getElementById('contact-form').reset(); // Optionally clear the form after submission
-});
+function handleSubmit(event) {
+    event.preventDefault(); // Prevent default form submission
+    const form = event.target;
+    const submitButton = document.getElementById('submit-btn');
+    const responseMessage = document.getElementById('response-message');
+    
+    // Disable submit button while sending
+    submitButton.disabled = true;
+
+    // Create a FormData object
+    const formData = new FormData(form);
+
+    // Use fetch API to submit form data
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            responseMessage.textContent = "Your message has been sent successfully!";
+            responseMessage.style.color = 'green';
+        } else {
+            responseMessage.textContent = "There was an error sending your message. Please try again.";
+            responseMessage.style.color = 'red';
+        }
+        responseMessage.style.display = 'block';
+        submitButton.disabled = false; // Re-enable submit button
+        form.reset(); // Optionally reset the form
+    })
+    .catch(error => {
+        responseMessage.textContent = "There was an error sending your message. Please try again.";
+        responseMessage.style.color = 'red';
+        responseMessage.style.display = 'block';
+        submitButton.disabled = false;
+    });
+}
 
 // Optional: Smooth scroll to top when clicking the email
 document.querySelector('.footer-info a').addEventListener('click', function(e) {
