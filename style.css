@@ -581,21 +581,23 @@ section{
   
   /* Google Map Container */
   .map-container {
-    flex: 0;
+    flex: 1;
     border: 2px solid #fff;
     border-radius: 10px;
     padding: 10px;
     margin-left: 70px;
+    overflow: hidden;
   }
   
   /* Form Container */
   .form-container {
-    flex: 0;
+    flex: 1;
     background-color: red;
     border-radius: 10px;
     padding: 20px;
     color: white;
     margin-right: 15px;
+    overflow: hidden;
   }
   
   /* Form Fields */
