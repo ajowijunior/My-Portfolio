@@ -586,7 +586,7 @@ section{
     border-radius: 10px;
     padding: 10px;
     margin-left: 70px;
-    overflow: hidden;
+    max-height: fit-content;
   }
   
   /* Form Container */
@@ -597,7 +597,7 @@ section{
     padding: 20px;
     color: white;
     margin-right: 15px;
-    overflow: hidden;
+    max-height: fit-content;
   }
   
   /* Form Fields */
