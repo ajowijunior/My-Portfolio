@@ -489,7 +489,7 @@ section{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 70px;
     margin-right: 70px;
   }
@@ -581,7 +581,7 @@ section{
   
   /* Google Map Container */
   .map-container {
-    flex: 1;
+    flex: 0;
     border: 2px solid #fff;
     border-radius: 10px;
     padding: 10px;
@@ -590,7 +590,7 @@ section{
   
   /* Form Container */
   .form-container {
-    flex: 1;
+    flex: 0;
     background-color: red;
     border-radius: 10px;
     padding: 20px;
