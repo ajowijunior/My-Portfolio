@@ -316,7 +316,7 @@ section{
     margin-bottom: 10px;
 }
 
-.mission p1 {
+.mission p {
     font-size: 16px;
     color:  black;
 }
@@ -519,7 +519,7 @@ section{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-left: 70px;
     margin-right: 70px;
   }
