@@ -247,6 +247,123 @@ section{
     color:  black;
 }
 
+#skills {
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgb(211,3,3);
+    margin-top: -6rem;
+}
+
+/* Skill title styling */
+.skill .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+/* Skill bar container */
+.skill-bar {
+    position: relative;
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Skill percentage inside the bar */
+.skill-per {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Tooltip (percentage text) inside the skill bar */
+
+.skill .tooltip {
+    visibility: hidden;
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    top: -30px;  /* Position it above the bar */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+
+/* Hover effect for skill bars */
+.skill-bar:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Specific skill colors */
+.django {
+    width: 90%; /* Django skill level */
+    background: linear-gradient(to right, #092e20, #3f8b62); /* Greenish gradient */
+}
+
+.python {
+    width: 85%; /* Python skill level */
+    background: linear-gradient(to right, #306998, #FFD43B); /* Python's blue and yellow gradient */
+}
+
+.html {
+    width: 95%; /* HTML skill level */
+    background: linear-gradient(to right, #e34c26, #f06529); /* HTML orange-red gradient */
+}
+
+.javascript {
+    width: 80%; /* JavaScript skill level */
+    background: linear-gradient(to right, #f7df1e, #f7df1e); /* JavaScript yellow */
+}
+
+.kotlin {
+    width: 70%; /* Kotlin skill level */
+    background: linear-gradient(to right, #7f52ff, #8e24aa); /* Purple gradient for Kotlin */
+}
+
+.css {
+    width: 90%; /* CSS skill level */
+    background: linear-gradient(to right, #264de4, #2965f1); /* CSS blue gradient */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #skills {
+        padding: 30px;
+    }
+
+    .skill-bar {
+        width: 90%; /* Adjust skill bar width for smaller screens */
+    }
+
+    .skill .title {
+        font-size: 1.3rem;
+    }
+}
+
+
 
 @media (max-width: 480px) {
     h1 {
