@@ -348,6 +348,86 @@ section{
     background: linear-gradient(to right, #264de4, #2965f1); /* CSS blue gradient */
 }
 
+ /* Container for the service sections */
+ .services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 5rem;
+    margin-top: -5px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  
+  .service {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Styling the image */
+  .service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Overlay containing text */
+  .service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .service:hover .service-overlay {
+    opacity: 1;
+  }
+  
+  .service-overlay h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .service-overlay p {
+    font-size: 1em;
+    color: white;
+    max-width: 300px;
+    line-height: 1.5;
+  }
+  
+  /* Hover effect for the services */
+  .service:hover .service-overlay h3, 
+  .service:hover .service-overlay p {
+    color: white;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .services-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
 
 /* Responsive design */
 @media (max-width: 768px) {
