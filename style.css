@@ -198,7 +198,7 @@ section{
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    margin-top: -6rem;
+    margin-top: -2rem;
 }
 
 #about h2 {
@@ -209,7 +209,7 @@ section{
 
 #about p {
     font-size: 18px;
-    color: #00d4ff;
+    color: red;
     margin-bottom: 30px;
 }
 
@@ -252,6 +252,7 @@ section{
     text-align: center;
     border-radius: 15px;
     max-width: 1200px;
+    max-height: 550px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgb(211,3,3);
     margin-top: -7rem;
@@ -310,8 +311,6 @@ section{
     z-index: 1;
   }
 
-
-/*service section*/
 .services {
     text-align: center;
     padding: 55px 25px;
