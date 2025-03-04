@@ -252,7 +252,7 @@ section{
     text-align: center;
     border-radius: 15px;
     max-width: 1200px;
-    max-height: 550px;
+    max-height: 580px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgb(211,3,3);
     margin-top: -7rem;
@@ -348,6 +348,57 @@ section{
     font-size: 1em;
     line-height: 1.6;
     color: white;
+}
+
+/*contact-section*/
+
+.contact-section {
+    padding: 50px 20px;
+    background: red;
+    box-shadow: 0 0 10px rgba(211,3,3 0.1);
+    max-width: 1000px;
+    max-height: 780px;
+    margin: 40px auto;
+    margin-top: -15.7rem;
+    border-radius: 10px;
+}
+h2 {
+    color: white;
+}
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+input:focus, textarea:focus {
+    border-color: black;
+}
+button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: rgb(211,3,3);
 }
 
 @media (max-width: 768px) {

@@ -35,3 +35,12 @@ function eraseText() {
 
 // Start the typing effect
 typeWriter();
+
+//contact section
+    document.getElementById('contactForm').onsubmit = function(e) {
+        e.preventDefault();
+        alert('Thank you for reaching out! We will get back to you soon.');
+        this.reset();
+    }
+
+
