@@ -2,7 +2,8 @@
 const texts = [
     "Software Developer",
     "YouTuber",
-    "Web Designer"
+    "Web Designer",
+    "IT Entertainer"
 ]
 
 let speed = 100;
@@ -36,9 +37,34 @@ function eraseText() {
 typeWriter();
 
 
-/** JAVASCRIPT FILE: script.js **/
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Message sent successfully! We will get back to you soon!");
+//form setting section 
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch("https://formspree.io/f/xeoajnpp", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (response.ok) {
+                alert("Message sent successfully! We will get back to you!");
+                form.reset(); // Clear the form after submission
+            } else {
+                alert("Failed to send message. Please try again later.");
+            }
+        } catch (error) {
+            alert("An error occurred. Please check your internet connection and try again.");
+        }
+    });
 });
+
 
