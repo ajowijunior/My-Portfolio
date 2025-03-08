@@ -1,4 +1,3 @@
-
 //for typewriter effect
 const texts = [
     "Software Developer",
@@ -33,8 +32,13 @@ function eraseText() {
     }
 }
 
+// Start the typing effect
+typeWriter();
+
+
 /** JAVASCRIPT FILE: script.js **/
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
     alert("Message sent successfully!");
 });
+
