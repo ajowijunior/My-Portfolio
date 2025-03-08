@@ -213,6 +213,51 @@ section{
     line-height: 1.6;
 }
 
+/*skills-sections*/
+#skills {
+    width: 95%;
+    background: rgb(211,3,3);
+    padding: 20px;
+    margin: 0px auto;
+    max-height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: rgb(211,3,3);
+}
+h2 {
+    text-align: center;
+    color: black;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.skill {
+    background: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.skill:hover {
+    transform: scale(1.05);
+    background: black;
+    color: white;
+}
+.progress-bar {
+    height: 8px;
+    width: 0;
+    background: black;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 1s ease-in-out;
+}
+
 /*service-section*/
 .services {
     text-align: center;

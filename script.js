@@ -39,6 +39,6 @@ typeWriter();
 /** JAVASCRIPT FILE: script.js **/
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
-    alert("Message sent successfully!");
+    alert("Message sent successfully! We will get back to you soon!");
 });
 
