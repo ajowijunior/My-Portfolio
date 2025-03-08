@@ -1,8 +1,8 @@
 *{
-        padding: 0;
-        margin: 0;
-        font-family: 'poppins',sans-serif;
-        box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -189,127 +189,6 @@ section{
     animation: animate 1.5s ease-in-out infinite;
 }
 
- /* About section styling */
-#about {
-    padding: 50px 0;
-}
-
-#about .container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: -2rem;
-}
-
-#about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: white;
-}
-
-#about p {
-    font-size: 18px;
-    color: white;
-    margin-bottom: 30px;
-}
-
-/* About details (image and mission) */
-.about-details {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.team-image img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(211,3,3);
-}
-
-.mission {
-    width: 45%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(211,3,3);
-}
-
-.mission h3 {
-    font-size: 24px;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.mission p1 {
-    font-size: 16px;
-    color:  black;
-}
-
-#skills {
-    padding: 50px;
-    text-align: center;
-    border-radius: 15px;
-    max-width: 1200px;
-    max-height: 580px;
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgb(211,3,3);
-    margin-top: -7rem;
-}
-
-/* Skill title styling */
-.skill .title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
-}
-
-/* Skill bar container */
-.skill-bar {
-    position: relative;
-    width: 80%;
-    height: 30px;
-    margin: 0 auto;
-    border-radius: 10px;
-    background-color: #333;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-}
-
-/* Skill percentage inside the bar */
-.skill-per {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-weight: bold;
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-
-/* Tooltip (percentage text) inside the skill bar */
-
-.skill .tooltip {
-    visibility: hidden;
-    position: absolute;
-    background-color: #333;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-    top: -30px;  /* Position it above the bar */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-  }
 
 .services {
     text-align: center;
@@ -350,56 +229,6 @@ section{
     color: white;
 }
 
-/*contact-section*/
-
-.contact-section {
-    padding: 50px 20px;
-    background: red;
-    box-shadow: 0 0 10px rgba(211,3,3, 0.1);
-    max-width: 1000px;
-    margin: 40px auto;
-    margin-top: -12rem;
-    border-radius: 10px;
-}
-h2 {
-    color: white;
-}
-iframe {
-    width: 100%;
-    height: 250px;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-}
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    transition: 0.3s;
-}
-input:focus, textarea:focus {
-    border-color: black;
-}
-button {
-    padding: 10px 20px;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-button:hover {
-    background: rgb(211,3,3);
-}
-
 @media (max-width: 768px) {
     .services h2 {
         font-size: 2em;
@@ -410,105 +239,29 @@ button:hover {
     .service-item h3 {
         font-size: 1.2em;
     }
-}  
+} 
 
-/* Hover effect for skill bars */
-.skill-bar:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
+/*   About section*/
+#about {
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    max-height: fit-content;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(211,3,3);
 }
 
-/* Specific skill colors */
-.django {
-    width: 90%; /* Django skill level */
-    background: linear-gradient(to right, #092e20, #3f8b62); /* Greenish gradient */
+#about h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.python {
-    width: 85%; /* Python skill level */
-    background: linear-gradient(to right, #306998, #FFD43B); /* Python's blue and yellow gradient */
+#about p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-.html {
-    width: 95%; /* HTML skill level */
-    background: linear-gradient(to right, #e34c26, #f06529); /* HTML orange-red gradient */
-}
-
-.javascript {
-    width: 80%; /* JavaScript skill level */
-    background: linear-gradient(to right, #f7df1e, #f7df1e); /* JavaScript yellow */
-}
-
-.kotlin {
-    width: 70%; /* Kotlin skill level */
-    background: linear-gradient(to right, #7f52ff, #8e24aa); /* Purple gradient for Kotlin */
-}
-
-.css {
-    width: 90%; /* CSS skill level */
-    background: linear-gradient(to right, #264de4, #2965f1); /* CSS blue gradient */
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    #skills {
-        padding: 30px;
-    }
-
-    .skill-bar {
-        width: 90%; /* Adjust skill bar width for smaller screens */
-    }
-
-    .skill .title {
-        font-size: 1.3rem;
-    }
-}
-
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem; /* Further reduce heading size */
-    }
-
-    .typewriter {
-        font-size: 1.2rem; /* Further reduce typewriter size */
-    }
-
-    .social-links a {
-        font-size: 1.2rem; /* Further reduce icon size */
-    }
-
-    .btn button {
-        width: 100%; /* Make button full width */
-        font-size: 1rem; /* Adjust button text size */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .contact-section {
-        padding: 30px 10px;
-        margin: 20px;
-    }
-    iframe {
-        height: 200px;
-    }
-    form {
-        padding: 10px;
-        gap: 10px;
-    }
-}
-@media screen and (max-width: 480px) {
-    h2 {
-        font-size: 1.5em;
-    }
-    iframe {
-        height: 150px;
-    }
-    input, textarea {
-        font-size: 0.9em;
-    }
-    button {
-        padding: 8px 16px;
-    }
-}
-  

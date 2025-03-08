@@ -50,77 +50,24 @@
     </div>
 </section>
 
-<!-- About Section -->
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>I am a Web & Software Developer dedicated to providing the best services to my clients.<br> I also do Programming Tutorials on YouTube helping so many people to learn Coding.</p>
-        <div class="about-details">
-            <div class="team-image">
-                <img src="main-1.jpg" alt="my photo">
-            </div>
-            <div class="mission">
-                <h3>My Mission</h3>
-                <p1>My mission is to make a significant impact by offering innovative solutions that meet the needs of my customers.</p1>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Skills Section -->
-<section id="skills">
-    <h1 style="font-size: 36px; margin-bottom: 20px; color: white;">SKILLS<br>
-        <div style="font-size: 18px; color: white;">Touch each bar to see the percentages.</div>
-    </h1>
+<section id="about">
+    <h2>About Me</h2>
     <br>
-    <div class="skill">
-        <span class="title">Django</span>
-        <div class="skill-bar django">
-            <span class="skill-per">
-                <span class="tooltip">90%</span>
-            </span>
-        </div>
-    </div>
-    <div class="skill">
-        <span class="title">Python</span>
-        <div class="skill-bar python">
-            <span class="skill-per">
-                <span class="tooltip">85%</span>
-            </span>
-        </div>
-    </div>
-    <div class="skill">
-        <span class="title">HTML</span>
-        <div class="skill-bar html">
-            <span class="skill-per">
-                <span class="tooltip">95%</span>
-            </span>
-        </div>
-    </div>
-    <div class="skill">
-        <span class="title">JavaScript</span>
-        <div class="skill-bar">
-            <span class="skill-per javascript">
-                <span class="tooltip">80%</span>
-            </span>
-        </div>
-    </div>
-    <div class="skill">
-        <span class="title">KOTLIN</span>
-        <div class="skill-bar">
-            <span class="skill-per kotlin">
-                <span class="tooltip">70%</span>
-            </span>
-        </div>
-    </div>
-    <div class="skill">
-        <span class="title">CSS</span>
-        <div class="skill-bar">
-            <span class="skill-per css">
-                <span class="tooltip">90%</span>
-            </span>
-        </div>
-    </div>
+    <p>Welcome to my portfolio. I am a passionate developer skilled in various technologies.</p>
+    <br>
+    <p>
+        Founder of <b>Ajomax Codes kenya</b> YouTube Channel airing programming tutorials dedicated to helping 
+        developers and continuously create value in them.
+    </p>
+    <br>
+    <p>
+        I am an IT sPEAKER and eNTERTAINER at deverent levels of Tech events. 
+    </p>
+    <br>
+    <p>
+         Lastly I am <b>Software developer, Academic Instructor</b> at METAB COLLEGE Nairobi.
+    </p>
 </section>
 
 <!--sevices section-->
@@ -146,25 +93,55 @@
             </div>
         </div>
     </div>
+</section>
 
-    <br><br><br>
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Django</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Kotlin</li>
+        <li>Python</li>
+        <li>MySQL</li>
+    </ul>
+</section>
+
 <section id="contact">
-    <div class="contact-section">
-        <h2>Contact Me</h2>
-        <iframe 
-            src="https://www.google.com/maps?q=-1.3138,36.8946&hl=en&z=14&output=embed"
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <h2>Contact</h2>
+    <div class="contact-container">
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093643!2d144.95373531590412!3d-37.81627974202144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5779d4303c3e73d!2sMelbourne%2C+Australia!5e0!3m2!1sen!2sus!4v1611815663140!5m2!1sen!2sus" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact-form">
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </div>
 </section>
-</section>
+
+<footer>
+    <p>&copy; 2025 One IT Motivation</p>
+    <div class="social-links">
+        <a href="#">WhatsApp</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">YouTube</a>
+    </div>
+</footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({ offset: 0 });
