@@ -316,7 +316,7 @@ h2 {
     margin: 0 auto;
     padding: 40px 0;
     text-align: center;
-    background-color: rgb(211,3,3);
+    background-color: black;
     border-radius: 20px;
     max-height: fit-content;
     margin-top: -150px;
@@ -359,7 +359,7 @@ h2 {
 }
 
 .contact-form button {
-    background-color: rgb(211, 3, 124);
+    background-color: rgb(211, 3, 3);
     color: white;
     padding: 10px;
     border: none;
