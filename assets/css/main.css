@@ -1273,3 +1273,20 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+.service-item {
+  padding: 30px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+}
+
+.service-item .icon {
+  margin-bottom: 15px;
+}
